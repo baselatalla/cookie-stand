@@ -1,0 +1,57 @@
+body{
+   background-color: rgb(190, 140, 0);
+
+}
+a{
+    
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited {
+    color: goldenrod;
+}
+li{
+    margin-left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+header{
+    background-image: url(../img/cookies.jpg);
+    padding: 10px;
+}  
+
+footer{
+    background-image: url(../img/cookies.jpg);
+}
+h1{
+    text-align: center;
+    text-shadow: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+}
+h2,h3{
+    margin-left: 100px;
+}
+#img1{
+    margin-left: 270px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.img2{
+display: inline;
+width: 530px;
+height: 200px;
+}
+#col{
+    color: goldenrod;
+    background-color: black;
+}
