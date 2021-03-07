@@ -42,7 +42,8 @@ h2,h3{
     margin-left: 100px;
 }
 #img1{
-    margin-left: 270px;
+    display: block;
+    margin: 0px auto;
     padding: 10px;
     margin-bottom: 100px;
 }
