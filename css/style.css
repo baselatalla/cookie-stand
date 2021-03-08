@@ -56,3 +56,22 @@ height: 200px;
     color: goldenrod;
     background-color: black;
 }
+th{
+    padding: 10px;
+    padding-right: 40px;
+    text-align: center;
+    color: goldenrod;
+    
+}
+td{
+    color: black;
+    background-color: goldenrod;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+#table{
+    background-color: black;
+    display:inline-block;
+    margin-left: 10px;
+}
