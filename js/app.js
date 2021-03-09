@@ -1,11 +1,10 @@
 'use strict';
 
-let branchs = ['Seattle :', 'Tokyo :', 'Dubai  :', 'Paris  :', 'Lima  :'];
-
-function Cookies(minCust,maxCust,avgSaledCookie){
+function Cookies(branch,minCust,maxCust,avgSaledCookie){
   this.avgSaledCookie = avgSaledCookie;
   this.min = minCust;
   this.max = maxCust;
+  this.branch = branch;
   this.getRandCookPerHour = function(){
     let rand = Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
     let avg = this.avgSaledCookie;
@@ -21,11 +20,11 @@ function Cookies(minCust,maxCust,avgSaledCookie){
     return array;
   };}
 let town = [];
-town[0] = new Cookies(23,65,6.3);
-town[1] = new Cookies(3,24,1.2);
-town[2] = new Cookies(11,38,3.7);
-town[3] = new Cookies(20,38,2.3);
-town[4] = new Cookies(3,16,4.6);
+town[0] = new Cookies('Seattle ',23,65,6.3);
+town[1] = new Cookies('Tokyo ',3,24,1.2);
+town[2] = new Cookies('Dubai ',11,38,3.7);
+town[3] = new Cookies('Paris ',20,38,2.3);
+town[4] = new Cookies('Lima ',3,16,4.6);
 
 let total = ['Total',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
@@ -48,7 +47,7 @@ div.appendChild(table);
 
 for (let i = 0 ; i < town.length ; i++ ){
   let storedData = town[i].storInArray();
-  storedData[0] = branchs[i];
+  storedData[0] = town[i].branch;
   let data1 = [];
   for (let i=0; i<16;i++){
     data1[i] = document.createElement('td');}
@@ -56,22 +55,16 @@ for (let i = 0 ; i < town.length ; i++ ){
     total[i+1] += storedData[i+1];
     data1[i].innerText= storedData[i];
     table.appendChild(data1[i]);}
-  console.log(storedData[15]);
   let trr = document.createElement('tr');
   table.appendChild(trr);
-  div.appendChild(table);
-}
-for (let i = 0; i<16; i++){
   div.appendChild(table);}
 
-
-let tot = [];
+let totoftot = [];
 for (let i=0; i<16;i++){
-  tot[i]=document.createElement('th');}
+  totoftot[i]=document.createElement('th');}
 console.log(total[15]);
 for (let i=0; i<16;i++){
-  tot[i].innerText = total[i];
-  table.appendChild(tot[i]);}
-
+  totoftot[i].innerText = total[i];
+  table.appendChild(totoftot[i]);}
 for (let i = 0; i<16; i++){
   div.appendChild(table);}
