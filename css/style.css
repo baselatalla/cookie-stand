@@ -56,11 +56,11 @@ height: 200px;
     color: goldenrod;
     background-color: black;
 }
-th{ margin-left: 3px;
-    padding: 10px;
-    padding-right: 30px;
+th{ padding: 5px;
+    padding-right: 25px;
     text-align: center;
     color: goldenrod;
+    border: 4px solid goldenrod;
     
 }
 td{
