@@ -56,9 +56,9 @@ height: 200px;
     color: goldenrod;
     background-color: black;
 }
-th{
+th{ margin-left: 3px;
     padding: 10px;
-    padding-right: 40px;
+    padding-right: 30px;
     text-align: center;
     color: goldenrod;
     

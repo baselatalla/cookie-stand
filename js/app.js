@@ -14,7 +14,8 @@ function Cookies(minCust,maxCust,avgSaledCookie){
   this.storInArray = function(){
     let array = [];
     array[0] = '';
-    for (let i = 1 ; i <= 15; i++ ){
+    array[15] = 0;
+    for (let i = 1 ; i < 15; i++ ){
       array[i] = this.getRandCookPerHour();
       array[15] += array[i];}
     return array;
@@ -26,18 +27,19 @@ town[2] = new Cookies(11,38,3.7);
 town[3] = new Cookies(20,38,2.3);
 town[4] = new Cookies(3,16,4.6);
 
-let total = ['Total',0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let total = ['Total',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 let div = document.getElementById('table');
 let table= document.createElement('table');
 let hours = [];
 hours[0]='     ';
+hours[15]='Daily Location Total';
 for (let i=1; i<15;i++){
   hours[i]=i+5+':00  ';}
 let heading = [];
-for (let i=0; i<15;i++){
+for (let i=0; i<16;i++){
   heading[i]=document.createElement('th');}
-for (let i = 0; i<15; i++){
+for (let i = 0; i<16; i++){
   heading[i].innerText= hours[i];
   table.appendChild(heading[i]);}
 let trr = document.createElement('tr');
@@ -48,12 +50,13 @@ for (let i = 0 ; i < town.length ; i++ ){
   let storedData = town[i].storInArray();
   storedData[0] = branchs[i];
   let data1 = [];
-  for (let i=0; i<15;i++){
+  for (let i=0; i<16;i++){
     data1[i] = document.createElement('td');}
-  for (let i = 0; i<15; i++){
+  for (let i = 0; i<16; i++){
     total[i+1] += storedData[i+1];
     data1[i].innerText= storedData[i];
     table.appendChild(data1[i]);}
+  console.log(storedData[15]);
   let trr = document.createElement('tr');
   table.appendChild(trr);
   div.appendChild(table);
@@ -63,10 +66,10 @@ for (let i = 0; i<16; i++){
 
 
 let tot = [];
-for (let i=0; i<15;i++){
+for (let i=0; i<16;i++){
   tot[i]=document.createElement('th');}
-
-for (let i=0; i<15;i++){
+console.log(total[15]);
+for (let i=0; i<16;i++){
   tot[i].innerText = total[i];
   table.appendChild(tot[i]);}
 
