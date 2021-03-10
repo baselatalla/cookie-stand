@@ -88,3 +88,17 @@ fieldset, form{
 label, input {
     margin: 8px;
 }
+#cityName{
+    margin-left: 200px;
+}
+#minCust{
+margin-left: 68px;
+}
+#maxCust{
+    margin-left: 68px;
+
+}
+#avgCook{
+    margin-left: -4px;
+
+}
