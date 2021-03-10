@@ -16,10 +16,33 @@
         
     </header>
 
-    <main id="sales">
-        <h1>Daily Sales</h1>
-<div id="table"> </div>
-        
+    <main>
+       <h1>Daily Sales</h1>
+
+   <div id="table"> </div>
+   <br />
+   <form id="newCity">
+    <br />
+         <fieldset>
+            <legend>Add a new city branch :</legend>
+               <label for="cityName">Name of the branch city : </label> <br />
+                <input type="text" name="cityName" placeholder="city" id="cityName">
+                <br />
+                <label for="minCust">The minimum number of customers per hour : </label> <br />
+                <input type="text" name="minCust" placeholder="Number" id="minCust">
+                <br />
+                <label for="maxCust">The maximum number of customers per hour: </label> <br />
+                <input type="text" name="maxCust" placeholder="Number" id="maxCust">
+                <br />
+                <label for="avgCook">The average number of cookies purchased per customer : </label> <br />
+                <input type="text" name="avgCook" placeholder="Number" id="avgCook">
+                <br />
+                <input type="submit" value="Add">
+                
+            
+         </fieldset>
+
+    </form>
     </main>
     
     <footer></footer>

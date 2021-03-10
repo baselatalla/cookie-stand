@@ -75,3 +75,16 @@ td{
     display:inline-block;
     margin-left: 10px;
 }
+form{
+    margin: 30px ;
+}
+fieldset, form{
+    display: inline-block;
+    color: goldenrod;
+    background-color: black;
+    padding: 20px;
+    border: 5px;
+}
+label, input {
+    margin: 8px;
+}
