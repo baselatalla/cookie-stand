@@ -103,9 +103,12 @@ margin-left: 64px;
 
 }
 input:invalid {
-    border: 2px solid goldenrod;
+   border: 2px solid goldenrod;
+   border-radius: 5px;
 }
 input:valid {
     border: 2px solid goldenrod;
+    padding: 8px;
+    border-radius: 8px;
   }
   
