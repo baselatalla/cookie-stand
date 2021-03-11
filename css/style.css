@@ -92,7 +92,7 @@ label, input {
     margin-left: 200px;
 }
 #minCust{
-margin-left: 68px;
+margin-left: 64px;
 }
 #maxCust{
     margin-left: 68px;
@@ -102,3 +102,10 @@ margin-left: 68px;
     margin-left: -4px;
 
 }
+input:invalid {
+    border: 2px solid goldenrod;
+}
+input:valid {
+    border: 2px solid goldenrod;
+  }
+  
