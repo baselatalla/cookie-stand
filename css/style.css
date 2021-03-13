@@ -1,5 +1,6 @@
 body{
    background-color: rgb(190, 140, 0);
+   background-image: url(../img/cookie-dough-baked-with-chocolate-flakes-repetitive-background-vector.jpg);
 
 }
 a{
@@ -10,10 +11,15 @@ a{
 a:visited {
     color: goldenrod;
 }
-li{
+nav li{
     margin-left: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a:hover{
+    transition-duration: 350ms;
+    color: aliceblue;
+}
+
 #li{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
@@ -28,24 +34,68 @@ header{
     background-image: url(../img/cookies.jpg);
     padding: 10px;
 }  
-
-footer{
-    background-image: url(../img/cookies.jpg);
+#bigone{
+    width: 600px;
+    margin-left: 28%;
+    margin-bottom: 5%;
 }
-h1{
+#loc{
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    margin-left: 38%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+div li{
+    padding: 5px;
+}
+main h1{
     text-align: center;
-    text-shadow: 3px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Pacifico', cursive;
     padding: 8px;
+   font-size: xx-large;
+   font-weight: bolder;
+   color:rgb(236, 114, 14);
 }
-h2,h3{
-    margin-left: 100px;
+.fam {
+    font-family:'Pacifico', cursive;
+    color: rgb(236, 114, 14);
+    font-weight: bold;
+    text-align:center ;
+    font-size: xx-large;
+    display: inline-block;
+    margin-left: 30px;
+}
+.famm{
+    margin-left: 20%;
+}
+#tshirt{
+    margin-left: 39%;
+}
+#sales{
+    background-color: crimson   ;
+}
+#sales p {
+margin-left: 25%;
+align-items: center;
+font-family: cursive;
+font-size: xx-large;
+
+}
+#lastone{
+    margin-left: 32%;
 }
 #img1{
-    display: block;
-    margin: 0px auto;
-    padding: 10px;
-    margin-bottom: 100px;
+   width: 195px;
+   height: 65px;
+   float: right;
+   margin-right:50px; 
+   margin-top: -75px;
 }
 .img2{
 display: inline;
@@ -54,6 +104,8 @@ height: 200px;
 }
 #col{
     color: goldenrod;
+    display: inline-block;
+    align-items:center;
     background-color: black;
 }
 th{ padding: 5px;
@@ -111,4 +163,10 @@ input:valid {
     padding: 8px;
     border-radius: 8px;
   }
-  
+  footer{
+    background-image: url(../img/cookies.jpg);
+    
+}
+footer li {
+    margin-bottom: 10px;
+}
