@@ -63,28 +63,31 @@ main h1{
    color:rgb(236, 114, 14);
 }
 .fam {
-    font-family:'Pacifico', cursive;
-    color: rgb(236, 114, 14);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align:center ;
-    font-size: xx-large;
+    font-size: x-large;
     display: inline-block;
     margin-left: 30px;
+    color: darkmagenta;
+    background-color: darkseagreen;
 }
 .famm{
     margin-left: 20%;
+
 }
 #tshirt{
     margin-left: 39%;
 }
 #sales{
-    background-color: crimson   ;
+    background-color: crimson ;
 }
 #sales p {
-margin-left: 25%;
+margin-left: 29%;
 align-items: center;
-font-family: cursive;
-font-size: xx-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: x-large;
+color: darkmagenta;
 
 }
 #lastone{
